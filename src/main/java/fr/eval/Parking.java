@@ -93,4 +93,40 @@ public class Parking {
 
         return complet;
     }
+
+    public int nbVéhiculeStationné() {
+        int nbVéhicule;
+        nbVéhicule = véhiculeStationné.size();
+
+        return nbVéhicule;
+    }
+
+    public LinkedList<String> getVéhiculeStationnés() {
+        return véhiculeStationné;
+    }
+
+    public void afficherVéhiculeStationnés() {
+        System.out.println(véhiculeStationné);
+    }
+
+    public ArrayList<String> getVéhiculeAutorisé() {
+        return véhiculeAutorisé;
+    }
+
+    public void afficherVéhiculeAutorisé(){
+        System.out.println(véhiculeAutorisé);
+    }
+
+    public float getTauxRemplissageParking() {
+        float tauxRemplissage = 0;
+        // Calcul du poucentage de remplissage du parking
+        tauxRemplissage = véhiculeStationné.size() * 100 / maxPlace;
+
+        return tauxRemplissage;
+    }
+
+    public void afficherTauxRemplissage() {
+        // Cette methode appelle la précédente et affiche le résultat en console
+        System.out.println(getTauxRemplissageParking());
+    }
 }
