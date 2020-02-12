@@ -67,4 +67,17 @@ public class Parking {
         }
         return isSuccess ;
     }
+
+    public boolean présenceVéhicule(String immatriculation) {
+        boolean present;
+        // On vérifie si le véhicule est présent sur le parking
+        if (véhiculeStationné.contains(immatriculation)){
+            present = true;
+        }
+        else{
+            present = false;
+        }
+
+        return present;
+    }
 }
