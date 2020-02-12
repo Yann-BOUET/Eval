@@ -15,6 +15,7 @@ public class Parking {
     public Parking(){
         véhiculeAutorisé.clear(); 
         véhiculeStationné.clear();
+        maxPlace = 200;
     }
 
     public void ajouterImmatriculationAutorisé(String immatriculation){
