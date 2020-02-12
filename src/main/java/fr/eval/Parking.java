@@ -80,4 +80,17 @@ public class Parking {
 
         return present;
     }
+
+    public boolean parkingComplet() {
+        boolean complet;
+
+        if (véhiculeStationné.size() >= maxPlace) {
+            complet = true;
+        }
+        else{
+            complet = false;
+        }
+
+        return complet;
+    }
 }
